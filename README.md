@@ -9,3 +9,10 @@ Họ tên: Võ Thanh Trí
     3. Contact
     4. Image
 4. Footer
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ThanhTri98/UI_Responsive_TheBand.git
+git push -u origin main
