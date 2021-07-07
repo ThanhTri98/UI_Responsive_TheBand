@@ -204,6 +204,7 @@ input {
 }
 
 #slider #text-content {
+    text-shadow: 2px 0px black;
     position: absolute;
     bottom: var(--heightHeader);
     width: fit-content;
@@ -329,17 +330,18 @@ border-radius: 4px;
     opacity: .6;
     margin: 18px 0;;
 }
-.tour-section .box-content .buy-ticket {
+
+.btn-form {
     display: inline-block;
     margin-top: 12px;
-    padding: 8px 16px;
+    padding: 10px 16px;
     background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
 
 }
-.tour-section .box-content .buy-ticket:hover {
+.btn-form:hover {
     color: #000;
     background-color: #ccc;
 
@@ -358,15 +360,16 @@ border-radius: 4px;
     width: 30px;
 }
 
+.section-contact .contact-text a {
+    color: #009688;
+}
 
-.form-contact .btn-submit  {
-    background-color: #000;
-    color: #fff;
-    width: fit-content;
+.section-contact .contact-text a:hover {
+    color: #02c2af;
+}
+
+.form-contact .btn-send  {
     float: right;
-    padding-left: 14px;
-    padding-right: 14px;
-    cursor: pointer;
 }
 
 .map-section img {
@@ -385,7 +388,7 @@ border-radius: 4px;
 
 #footer i  {
     font-size: 1.7em;
-    margin-right: 3px;
+    margin-right: 8px;
 }
 
 #footer i:hover  {
@@ -397,6 +400,7 @@ border-radius: 4px;
 }
 #footer a {
     text-decoration: underline;
+    color: #009688;
 }
 
 
