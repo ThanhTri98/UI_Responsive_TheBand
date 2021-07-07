@@ -7,7 +7,7 @@
 
 @font-face  {
     font-family: Lato;
-    src: url('/assets/fonts/Lato/Lato-Regular.ttf') format("truetype");
+    src: url('../../assets/fonts/Lato/Lato-Regular.ttf') format("truetype");
 }
 
 a {
@@ -188,12 +188,15 @@ html  {
 
 /* Kỹ thuật BackGround-Image cho slider */
 #slider  {
-    background-color: #f44336;
     margin-top: var(--heightHeader);
-    padding-top: 50%;
-    background-image: url('/assets/img/ny.jpg');
-    background-size: cover;
+    /* padding-top: 50%; */
+    /* background-image: url('/assets/img/ny.jpg');
+    background-size: cover; */
     position: relative;
+}
+#slider > img{
+    width: 100%;
+    max-height: calc(100vh - var(--heightHeader));
 }
 
 #slider #text-content {
