@@ -34,4 +34,18 @@ for (let i = 0; i < menuItemElements.length; i++) {
             headerElement.style.height = null;
         }
     }
+
+    // Scroll
+    const backToTopElement = document.getElementById('back-to-top');
+    backToTopElement.onclick = () =>{
+        window.scrollTo(0,0)
+    }
+    window.onscroll = () =>{
+        if(window.pageYOffset>500){
+            backToTopElement.style.display = 'block';
+        }else{
+            backToTopElement.style.display = 'none';
+        }
+
+    }
 }
