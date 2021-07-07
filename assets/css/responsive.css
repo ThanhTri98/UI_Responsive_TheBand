@@ -49,8 +49,12 @@
         position: initial;
     }
 
-    /* About */
+    /* Slider */
+    #slider #text-content {
+        display: none;
+    }
 
+    /* About */
     .col-mo-full{
         width: 100%;
     }
