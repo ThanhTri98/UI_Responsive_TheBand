@@ -51,7 +51,11 @@ html  {
 }
 
 /* Common */
-
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
 /* Text */
 .text-center {
     text-align: center !important;
@@ -354,11 +358,6 @@ border-radius: 4px;
     width: 30px;
 }
 
-.form-contact input {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 100%;
-}
 
 .form-contact .btn-submit  {
     background-color: #000;

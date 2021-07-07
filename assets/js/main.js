@@ -1,6 +1,10 @@
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+
 let isHidden = true;
-const headerElement = document.getElementById('header');
-const iconMenuElement = document.getElementById('search-btn');
+const headerElement = $('#header');
+const iconMenuElement = $('#search-btn');
 const headerHeight = headerElement.clientHeight;
 
 // Đóng/ mở mobile menu
@@ -13,13 +17,13 @@ iconMenuElement.onclick = () => {
 }
 
 // Ẩn menu khi nhấn vào item
-const menuItemElements = document.querySelectorAll('.hide-on-click');
+const menuItemElements = $$('.hide-on-click');
 for (let i = 0; i < menuItemElements.length; i++) {
     menuItemElements[i].onclick = function (e) {
         let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
         if (isParentMenu) {
             if (window.innerWidth < 740) {
-                let subnav = document.querySelector('.subnav');
+                let subnav = $('.subnav');
                 if (isHidden) {
                     subnav.style.display = 'block';
                     isHidden = false;
@@ -35,8 +39,16 @@ for (let i = 0; i < menuItemElements.length; i++) {
         }
     }
 
+    // Buy ticket click
+    const buyTicketElements = $$('.buy-ticket');
+    for (let index = 0; index < buyTicketElements.length; index++) {
+        buyTicketElements[index].onclick = () => {
+            $('#model').style.display = 'block';
+        }
+    }
+
     // Scroll
-    const backToTopElement = document.getElementById('back-to-top');
+    const backToTopElement = $('#back-to-top');
     backToTopElement.onclick = () =>{
         window.scrollTo(0,0)
     }
