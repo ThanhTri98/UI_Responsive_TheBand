@@ -1,0 +1,400 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face  {
+    font-family: Lato;
+    src: url('/assets/fonts/Lato/Lato-Regular.ttf') format("truetype");
+}
+
+a {
+    text-decoration: none;
+}
+
+.display-none {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar-track
+ {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+ {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+ {
+	background-color: #7e7e7e;
+    border-radius: 10px;
+}
+
+html  {
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+:root  {
+    --heightHeader:46px;
+}
+
+/* Common */
+
+/* Text */
+.text-center {
+    text-align: center !important;
+}
+/* UI */
+.row  {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col  {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-2  {
+    width: 50%;
+}
+
+.col-3  {
+    width: 33.33333%;
+}
+
+.col-full  {
+    width: 100%;
+}
+
+.mt-8  {
+    margin-top: 8px !important;
+}
+
+/* 1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết */
+
+/* 1. Vị trí
+2. Kích thước
+3. Màu sắc
+3. Kiểu: hình dạng, màu sắc,... */
+#main  {
+
+}
+
+#header  {
+    height: var(--heightHeader);
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#header #nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    line-height: var(--heightHeader);
+    padding: 0 24px;
+    display: block;
+}
+
+
+#nav .subnav {
+    display: none;
+    min-width: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li:hover > a,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav > li:last-child:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+}
+
+#header #search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    height: var(--heightHeader);
+    width: calc(var(--heightHeader) + 20px);
+    text-align: center;
+}
+
+#header #search-btn i.fa-bars {
+    display: none;
+}
+
+#header #search-btn:hover {
+    background-color: #f44336;
+}
+
+#header #search-btn i {
+    color: #fff;
+    line-height: var(--heightHeader);
+}
+
+
+#header #search-btn:hover i.fa-bars {
+    color: #000;
+}
+
+/* Kỹ thuật BackGround-Image cho slider */
+#slider  {
+    background-color: #f44336;
+    margin-top: var(--heightHeader);
+    padding-top: 50%;
+    background-image: url('/assets/img/ny.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#slider #text-content {
+    position: absolute;
+    bottom: var(--heightHeader);
+    width: fit-content;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+#slider #text-content h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* ################################ */
+#content  {
+
+}
+
+#content .content-section {
+    width: 100%;
+    max-width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .content-section .section-heading {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .content-section .section-sub-heading {
+    color: rgb(139, 139, 139);
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+#content .content-section .text-about {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .row-members {
+    padding: 32px 0;
+}
+
+#content .row-members p {
+margin: 15px 0;
+}
+
+#content .row-members img {
+border-radius: 4px;
+    width: 60%;
+    margin-bottom: 16px;
+}
+
+#content .tour-section {
+    background-color: #000;
+}
+
+.tour-section .section-heading {
+    color: #fff;
+}
+
+.tour-section .list-tickets {
+    margin: 0 -4px;
+    color: #757575;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+.tour-section .list-tickets li {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+.tour-section .list-tickets .bg-red {
+    background-color: #f44336;
+    margin-left: 16px;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+.tour-section .list-tickets .count {
+    padding: 1px 8px;
+    background: #000;
+    color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    right: 20px;
+}
+
+/* Place */
+
+.tour-section .list-places {
+    margin-top: 32px;
+}
+
+
+.tour-section .list-places .item-place {
+    /* margin: 0 16px; */
+    padding: 0 5px;
+}
+
+.tour-section .item-place img {
+    width: 100%;
+    display: block;
+}
+.tour-section .item-place img:hover {
+    opacity: .6;
+
+}
+
+.tour-section .box-content {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.tour-section .box-content .date {
+    opacity: .6;
+    margin: 18px 0;;
+}
+.tour-section .box-content .buy-ticket {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+.tour-section .box-content .buy-ticket:hover {
+    color: #000;
+    background-color: #ccc;
+
+}
+
+.section-contact  {
+    padding: 36px 0;
+
+}
+
+.section-contact .contact-text li {
+    padding: 3px 0;
+}
+
+.section-contact .contact-text i {
+    width: 30px;
+}
+
+.form-contact input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-contact .btn-submit  {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    float: right;
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+}
+
+.map-section img {
+    width: 100%;
+    display: block;
+}
+
+
+
+#footer  {
+    color: #696969;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 64px 0;
+}
+
+#footer i  {
+    font-size: 1.7em;
+    margin-right: 3px;
+}
+
+#footer i:hover  {
+    opacity: .6;
+}
+
+#footer .ft-1 {
+    margin: 16px 0;
+}
+#footer a {
+    text-decoration: underline;
+}
+
+

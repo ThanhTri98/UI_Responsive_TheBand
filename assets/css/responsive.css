@@ -1,0 +1,72 @@
+/* Mobile */
+@media (max-width: 739px) {
+    /* Icon search */
+    #header {
+        overflow: hidden;
+    }
+
+    #header #search-btn i.fa-search{
+        display: none;
+    }
+
+    #header #search-btn i.fa-bars{
+        display: inline-block;
+    }
+
+    #header #search-btn:hover{
+        background-color: #ccc;
+    }
+
+    #header #nav{
+        display: block;
+    }
+
+    #nav .subnav{
+        background-color: rgb(51, 51, 51);
+    }
+    
+    #nav .subnav a{
+        color: #fff;
+        padding: 0 40px;
+    }
+
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav li:hover > a,
+    #nav > li:hover > a{
+        background-color: #000;
+        color: #fff;
+    }
+
+    #nav .subnav {
+        position: initial;
+    }
+
+    /* About */
+
+    .col-mo-full{
+        width: 100%;
+    }
+
+    .tour-section .list-places .item-place{
+        margin-bottom: 16px;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    
+}
