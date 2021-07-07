@@ -93,7 +93,7 @@
     color: #fff;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 46.1875em) {
     #model .container {
         width: 95%;
     }
