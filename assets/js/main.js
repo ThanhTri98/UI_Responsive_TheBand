@@ -44,6 +44,7 @@ for (let i = 0; i < menuItemElements.length; i++) {
     for (let index = 0; index < buyTicketElements.length; index++) {
         buyTicketElements[index].onclick = () => {
             $('#model').style.display = 'block';
+            console.log("alo");
         }
     }
 
